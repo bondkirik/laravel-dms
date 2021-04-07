@@ -1,0 +1,58 @@
+1. Sub companies, sub departments?
+2. Employee can be assigned to one department?
+3. Login e-mail?
+4. Document number formats?
+5.
+
+db migrations
+
+models
+
+controllers
+
+routes
+
+
+
+php artisan make:migration create_corporations_table
+php artisan make:migration create_companies_table
+php artisan make:migration create_departments_table
+php artisan make:migration create_employees_table
+php artisan make:migration create_documents_table
+php artisan make:migration create_attachments_table
+php artisan make:migration create_document_types_table
+php artisan make:migration create_document_status_table
+php artisan make:migration create_document_audit_table
+php artisan make:migration create_templates_table
+php artisan make:migration create_folders_table
+php artisan make:migration create_tasks_table
+php artisan make:migration create_notifications_table
+php artisan make:migration create_permissions_table
+php artisan make:migration create_emails_table
+
+
+AttachmentController
+CompanyController
+CorporationController
+DepartmentController
+DocumentController
+EmailController
+EmployeeController
+FolderController
+NotificationController
+TaskController
+TemplateController
+
+
+AttachmentService
+CompanyService
+CorporationService
+DepartmentService
+DocumentService
+EmailService
+EmployeeService
+FolderService
+NotificationService
+PermissionService
+TaskService
+TemplateService

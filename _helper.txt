@@ -1,0 +1,43 @@
+php artisan cache:clear
+
+
+composer dump-autoload
+php artisan migrate
+php artisan db:seed
+
+php artisan migrate:fresh --seed
+
+php artisan migrate:rollback
+
+
+php artisan queue:flush
+php artisan queue:work --queue=high,default
+
+
+php artisan make:migration create_users_table
+php artisan make:migration create_stories_categories_table
+php artisan make:migration create_stories_table
+php artisan make:migration create_stories_comments_table
+php artisan make:migration create_tags_table
+php artisan make:migration create_stories_views_table
+php artisan make:migration create_stories_tags_table
+php artisan make:migration create_jobs_table
+php artisan make:migration create_failed_jobs_table
+php artisan make:migration create_stories_articles_table
+php artisan make:migration create_audit_table
+php artisan make:migration create_rating_table
+php artisan make:migration create_taggables_table
+php artisan make:migration create_users_profiles_table
+
+php artisan make:migration create_roles_table
+php artisan make:migration create_permissions_table
+php artisan make:migration create_users_roles_table
+php artisan make:migration create_users_permissions_table
+php artisan make:migration create_roles_permissions_table
+
+
+
+php artisan make:migration create_corporations_table
+php artisan make:migration create_companies_table
+php artisan make:migration create_departments_table
+php artisan make:migration create_user_relations_table
